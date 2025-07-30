@@ -1,0 +1,423 @@
+.video {
+    display: flex;
+    padding: 60px 0;
+    justify-content: center;
+}
+
+.video-section {
+    width: 100%;
+    max-width: 875px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.video-player {
+    width: 100%;
+}
+
+.video-player-element {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    color: #303030;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.video-user-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.user-section-left {
+    display: flex;
+    gap: 15px;
+}
+
+.user-image-left {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.user-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.video-subsViews {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-user-name {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.video-creation-date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #606060;
+}
+
+.subscribe-btn {
+    background-color: #f0f0f0;
+    padding: 0px 16px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    font-weight: 600;
+    color: #303030;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-section-right {
+    display: flex;
+    gap: 10px;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.video-like-section {
+    display: flex;
+    gap: 10px;
+}
+
+.like-count {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.divider-div {
+    width: 0px;
+    height: 20px;
+    border: 1px solid #fff;
+}
+
+.video-description {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #303030;
+    gap: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.video-comments-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.comments-section-head {
+    color: #404040;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.video-self-comment {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.self-profile-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.add-comment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.add-comment-input {
+    width: 100%;
+    color: #606060;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid #000;
+    }
+    &::placeholder{
+        font-size: 14px;
+    }
+}
+
+.cancel-submit-comment {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.comment {
+    color: #303030;
+    padding: 8px 16px;
+    border-radius: 18px;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    &:hover{
+        background-color: #f0f0f0;
+    }
+}
+
+.video-others-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.others-comment-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.others-comment-header {
+    display: flex;
+    gap: 10px;
+}
+
+.others-username {
+    font-size: 14px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.comment-timing {
+    font-size: 14px;
+    color: #606060;
+}
+
+.other-user-comments {
+    color: #303030;
+    margin-top: 10px;
+}
+
+/* ***********CSS for video suggestions div******* */
+.video-suggestions {
+    color: #303030;
+    width: 100%;
+    max-width: 406px;
+    padding: 10px 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.video-suggestions-section{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+.video_suggetion_thumbnail{
+    width: 168px;
+    height: 94px;
+}
+.video_suggetion_thumbnail_img{
+    width: inherit;
+    border-radius: 5px;
+}
+.video_suggetions_about{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.video_suggetions_about_title{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.video_suggetions_about_profile{
+    color: #606060;
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .video-section {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .video-suggestions {
+        max-width: 320px;
+        padding: 8px 5px;
+    }
+    .video_suggetion_thumbnail {
+        width: 120px;
+        height: 68px;
+    }
+}
+
+@media (max-width: 900px) {
+    .video {
+        flex-direction: column;
+        padding: 60px 0 0 0;
+        align-items: center;
+    }
+    .video-section {
+        max-width: 100vw;
+        padding: 0 5px;
+    }
+    .video-suggestions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .video-suggestions-section {
+        width: 48%;
+        min-width: 180px;
+        max-width: 100%;
+    }
+    .video_suggetion_thumbnail {
+        width: 100px;
+        height: 56px;
+    }
+    .video_suggetion_thumbnail_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .video {
+        flex-direction: column;
+        padding: 150px 0 0 0;
+        align-items: center;
+    }
+    .video-section {
+        max-width: 100vw;
+        padding: 0 2px;
+    }
+    .video-player-element {
+        aspect-ratio: 16/9;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        display: block;
+    }
+    .video-title {
+        font-size: 16px;
+    }
+    .video-user-section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .user-section-left {
+        gap: 8px;
+    }
+    .video-user-name {
+        font-size: 14px;
+    }
+    .video-creation-date {
+        font-size: 12px;
+    }
+    .subscribe-btn {
+        font-size: 12px;
+        height: 28px;
+        padding: 0 10px;
+    }
+    .user-section-right {
+        padding: 6px 6px;
+        gap: 6px;
+    }
+    .like-count {
+        font-size: 12px;
+    }
+    .video-description {
+        font-size: 12px;
+        padding: 8px;
+        margin-top: 6px;
+    }
+    .comments-section-head {
+        font-size: 16px;
+    }
+    .self-profile-logo,
+    .user-logo {
+        width: 28px;
+        height: 28px;
+    }
+    .add-comment-input {
+        font-size: 12px;
+        height: 28px;
+    }
+    .comment {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .video-others-comment {
+        gap: 6px;
+    }
+    .others-username,
+    .comment-timing {
+        font-size: 12px;
+    }
+    .other-user-comments {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    .video-suggestions {
+        flex-direction: column;
+        max-width: 100vw;
+        width: 100vw;
+        padding: 4px 0;
+        gap: 6px;
+    }
+    .video-suggestions-section {
+        width: 100vw;
+        min-width: 0;
+        gap: 8px;
+    }
+    .video_suggetion_thumbnail {
+        width: 80px;
+        height: 45px;
+    }
+    .video_suggetion_thumbnail_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .video_suggetions_about_title {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .video_suggetions_about_profile {
+        font-size: 10px;
+    }
+}
+

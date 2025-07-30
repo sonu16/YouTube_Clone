@@ -1,0 +1,113 @@
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-card {
+    width: 40%;
+    height: 60%;
+    background-color: #fff;
+    margin-top: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 8px black;
+}
+
+.login-card-header {
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-login-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-login-username {
+    width: 60%;
+    height: 45px;
+    color: #303030;
+    padding: 0 10px;
+    border-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.login-btns {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.login-button {
+    width: 25%;
+    border: 1px solid #606060;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #303030;
+    text-decoration: none;
+    &:hover{
+        background-color: #f0f0f0;
+    }
+}
+
+@media (max-width: 900px) {
+  .login-card {
+    width: 80%;
+    padding: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .user-login-username {
+    width: 90%;
+    height: 35px;
+    font-size: 12px;
+  }
+  .login-button {
+    width: 40%;
+    font-size: 12px;
+    height: 30px;
+  }
+}

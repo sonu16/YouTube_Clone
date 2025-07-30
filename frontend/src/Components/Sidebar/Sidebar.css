@@ -1,0 +1,80 @@
+
+.home-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.16 1;
+    box-sizing: border-box;
+    height: 92vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    background-color: #fff;
+    width: 275px;
+    padding: 14px;
+}
+
+.home-sidebar-hidden {
+    display: none;
+}
+
+.home-sidebar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.home-sidebar-top {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.home-sidebar-top-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 9px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover {
+        background-color: #f0f0f0;
+    }   
+}
+
+.home-sidebar-top-title {
+    font-size: 16px;
+    color: #404040;
+    font-weight: 100;
+}
+
+.home-sidebar-middle {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.home-sidebar-channel-logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .home-sidebar {
+    width: 180px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 1000;
+    background: #fff;
+    padding: 8px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}

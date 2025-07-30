@@ -1,0 +1,209 @@
+.profile {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 13px 0 13px;
+    color: #303030;
+}
+
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    flex: 1;
+    margin-left: 270px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-page-full {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    flex: 1;
+    margin-left: 135px;
+    margin-right: 135px;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-banner {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.channel-banner-img {
+    margin-top: 30px;
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+}
+
+.profile-top-section {
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px 0;    
+}
+
+.top-section-profile {
+    width: 150px;
+    height: 150px;
+}
+
+.top-profile-img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.about-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0 10px;
+    width: 85%;
+}
+
+.about-profile-name {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.about-profile-info {
+    font-size: 16px;
+    color: #303030;
+}
+
+.channel-info {
+    font-size: 16px;
+    color: #606060;
+}
+
+.profile-videos-section { 
+    width: 100%;
+}
+
+.profile-videos-header {
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: #303030;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.profile-videos {
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.videos-section {
+    width: 210px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.videos-section-thumbnail {
+    width: 100%;
+    height: 140px;
+}
+
+.videos-section-thumbnail-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.videos-detail-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.video-title {
+    margin: 10px 0;
+    width: 100%;
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.video-detail {
+    color: #606060;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .profile-page,
+  .profile-page-full {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+  .profile-videos {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-top-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .about-profile {
+    width: 100%;
+    padding: 0;
+  }
+  .profile-videos {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .videos-section {
+    width: 45vw;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile {
+    padding: 100px 5px;
+  }
+  .profile-page,
+  .profile-page-full {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 2px;
+  }
+  .channel-banner-img {
+    height: 80px;
+    border-radius: 10px;
+  }
+  .top-section-profile {
+    width: 80px;
+    height: 80px;
+  }
+  .about-profile-name {
+    font-size: 20px;
+  }
+  .profile-videos-header {
+    font-size: 16px;
+  }
+  .videos-section {
+    width: 90vw;
+    min-width: 120px;
+  }
+  .videos-section-thumbnail {
+    height: 80px;
+  }
+  .video-title {
+    font-size: 14px;
+  }
+}
